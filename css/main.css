@@ -148,7 +148,7 @@ input, textarea {
    font-size: 14px;
 }
 
-.hero-img-h2 span, .hero-img-h3 {
+.hero-img-h2 span, .hero-img-h3 span {
    color: #9a2018;
    font-size: 12px;
 }
@@ -157,13 +157,13 @@ input, textarea {
    display: none;
 }
 
-#hero-heading-box{
+#hero-heading-box {
    align-self: end;
 }
 
 .line-seperator {
    margin-top: 20px;
-   border-top: solid 3px #cf6666;
+   border-top: solid 3px #CF6666;
    padding-top: 20px;
 }
 
@@ -173,7 +173,7 @@ input, textarea {
    margin-bottom: 20px;
 }
 
-/* 4. ---Main Hero Image Conatct--- */
+/* 4. ---Main Hero Image Contact--- */
 
 .fas {
    font-size: 50px;
@@ -210,8 +210,8 @@ input, textarea {
 
 #why-choose-us-nav ul {
    list-style: none;
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
 }
 
 #why-choose-us-nav ul li {
@@ -219,7 +219,7 @@ input, textarea {
 }
 
 #why-choose-us-nav ul li a {
-   color: #9a2018;
+   color:#9a2018;
    padding: 5px;
 }
 
@@ -241,6 +241,21 @@ input, textarea {
    object-position: 30%;
 }
 
+#why-choose-us-hero-con .grid-con {
+   /* sit in the middle of the 3 column grid */
+   grid-column: 2/3;
+   /* stay in the top row, so it overalps the image */
+   grid-row: 1/1;
+   /* get rid of any margin from original .grid-con class */
+   margin: 0;
+}
+
+#why-choose-us-heading-box {
+   align-self: end;
+}
+
+
+
 /* 10. ---Tablet Sized Screens--- */
 
 @media screen and (min-width: 768px) {
@@ -257,7 +272,7 @@ input, textarea {
       order: -1;
    }
 
-   #button{
+   #button {
       display: none;
    }
 
@@ -278,10 +293,10 @@ input, textarea {
    #burger-con ul li {
       margin-right: 10px;
    }
-   
+
    #burger-con ul li:last-child {
       margin-right: 0px;
-   } 
+   }
 
    #main-nav {
       border-left: 2px solid #707070;
@@ -290,7 +305,7 @@ input, textarea {
       margin-bottom: 4%;
    }
 
-   #book-now-header{
+   #book-now-header {
       display: flex;
       margin-right: -16px;
    }
@@ -330,7 +345,7 @@ input, textarea {
 
    #booking-calendar input[type="submit"] {
       padding: 12px 0 12px 0;
-      background-color: #cf6666;
+      background-color: #CF6666;
       color: #fff;
       border: solid 2px #cf6666;
       border-radius: 10px;
@@ -370,6 +385,11 @@ input, textarea {
       margin: 0;
    }
 
+   #why-choose-us-nav {
+      margin-top: 30px;
+      margin-bottom: 30px;
+   }
+
    #why-choose-us-nav ul li {
       display: inline;
       margin-right: 30px;
@@ -384,6 +404,7 @@ input, textarea {
    #why-choose-us-hero {
       height: 240px;
    }
+
 }
 
 /* 11. ---Desktop Sized Screens--- */
@@ -425,7 +446,7 @@ input, textarea {
    }
 
    .hero-img-h2 span, .hero-img-h3 span {
-      font-size: 24px;
+      font-size: 16px;
    }
 
    #hero-main {
@@ -441,7 +462,7 @@ input, textarea {
    }
 
    #why-choose-us-hero {
-      height: 380x;
-
+      height: 380px;
    }
 }
+
